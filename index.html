@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Drifter: Car Chase Simulator - Play Online Free Racing Game</title>
+    <meta name="description" content="Experience thrilling high-speed car chases in Mr. Drifter: Car Chase Simulator. Master drifting techniques, escape police pursuits, and become the ultimate street racer in this exciting online game.">
+    <meta name="keywords" content="Mr. Drifter, Car Chase Simulator, online racing game, drift racing, police chase, street racing, free car game, racing simulator">
+    <meta name="author" content="Your Gaming Site">
+    <link rel="canonical" href="https://www.example.com/games/mr-drifter-car-chase-simulator">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Mr. Drifter: Car Chase Simulator - Play Online Free">
+    <meta property="og:description" content="Experience thrilling high-speed car chases and master drifting techniques in this exciting racing simulator.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.example.com/games/mr-drifter-car-chase-simulator">
+    <meta property="og:image" content="https://www.example.com/images/mr-drifter-preview.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mr. Drifter: Car Chase Simulator">
+    <meta name="twitter:description" content="Experience thrilling high-speed car chases and master drifting techniques.">
+    <meta name="twitter:image" content="https://www.example.com/images/mr-drifter-preview.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'apple-blue': '#007AFF',
+                        'apple-blue-dark': '#0066CC',
+                        'apple-gray': '#8E8E93',
+                        'apple-gray-light': '#F2F2F7',
+                        'apple-gray-dark': '#1C1C1E',
+                        'apple-green': '#34C759',
+                        'apple-red': '#FF3B30'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .game-container {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        
+        .floating-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #007AFF 0%, #0066CC 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .glass-effect {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+
+<body class="bg-white text-apple-gray-dark font-sans antialiased">
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-apple-blue rounded-lg flex items-center justify-center">
+                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M8 16.5a1.5 1.5 0 01-3 0V14h.5c.69 0 1.25-.56 1.25-1.25v-.75c0-.69.56-1.25 1.25-1.25h4c.69 0 1.25.56 1.25 1.25v3.75a1.5 1.5 0 01-3 0V14h-2v2.5z"/>
+                            <path d="M12.5 4h-5C6.67 4 6 4.67 6 5.5S6.67 7 7.5 7h5c.83 0 1.5-.67 1.5-1.5S13.33 4 12.5 4z"/>
+                        </svg>
+                    </div>
+                    <span class="text-xl font-semibold text-apple-gray-dark">GameHub</span>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#game" class="text-apple-gray hover:text-apple-blue-dark transition-colors">Play Game</a>
+                    <a href="#about" class="text-apple-gray hover:text-apple-blue-dark transition-colors">About</a>
+                    <a href="#features" class="text-apple-gray hover:text-apple-blue-dark transition-colors">Features</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-apple-gray-light to-white py-16 lg:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold gradient-text mb-6 floating-animation">
+                    Mr. Drifter: Car Chase Simulator
+                </h1>
+                <p class="text-xl md:text-2xl text-apple-gray mb-8 max-w-3xl mx-auto">
+                    Master the art of high-speed drifting and outmaneuver police in the ultimate car chase experience
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#game" class="bg-apple-blue hover:bg-apple-blue-dark text-white px-8 py-4 rounded-xl font-semibold transition-all transform hover:scale-105 inline-flex items-center justify-center">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"/>
+                        </svg>
+                        Play Now Free
+                    </a>
+                    <a href="#features" class="border-2 border-apple-blue text-apple-blue hover:bg-apple-blue hover:text-white px-8 py-4 rounded-xl font-semibold transition-all">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Section -->
+    <section id="game" class="py-16 game-container">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-apple-gray-dark mb-4">
+                    Play Mr. Drifter Online
+                </h2>
+                <p class="text-lg text-apple-gray max-w-2xl mx-auto">
+                    Jump straight into the action and experience the thrill of high-speed car chases and precision drifting
+                </p>
+            </div>
+            
+            <div class="flex justify-center">
+                <div class="w-full max-w-4xl bg-white rounded-2xl shadow-2xl p-4 md:p-8 glass-effect">
+                    <div class="relative w-full" style="padding-bottom: 75%; /* 4:3 Aspect Ratio */">
+                        <iframe 
+                            src="https://html5.gamedistribution.com/fce750f12dda4320ab5e5b638995459f/?gd_sdk_referrer_url=https://www.example.com/games/mr-drifter-car-chase-simulator" 
+                            class="absolute top-0 left-0 w-full h-full rounded-xl border-0"
+                            scrolling="none" 
+                            frameborder="0"
+                            title="Mr. Drifter: Car Chase Simulator Game"
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    <div class="mt-6 text-center">
+                        <div class="flex flex-wrap justify-center gap-2 text-sm text-apple-gray">
+                            <span class="bg-apple-gray-light px-3 py-1 rounded-full">🎮 Browser Game</span>
+                            <span class="bg-apple-gray-light px-3 py-1 rounded-full">📱 Mobile Friendly</span>
+                            <span class="bg-apple-gray-light px-3 py-1 rounded-full">🆓 Free to Play</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-apple-gray-dark mb-6">
+                        About the Game
+                    </h2>
+                    <p class="text-lg text-apple-gray mb-6">
+                        Mr. Drifter: Car Chase Simulator puts you behind the wheel of high-performance vehicles in intense police pursuit scenarios. Master the art of drifting, navigate through busy city streets, and use your driving skills to escape the law.
+                    </p>
+                    <p class="text-lg text-apple-gray mb-8">
+                        This thrilling racing simulator combines realistic physics with arcade-style gameplay, offering both casual players and racing enthusiasts an engaging experience that will keep you on the edge of your seat.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-apple-blue mb-2">10+</div>
+                            <div class="text-apple-gray">Unique Cars</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-apple-blue mb-2">5+</div>
+                            <div class="text-apple-gray">City Maps</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-apple-blue mb-2">∞</div>
+                            <div class="text-apple-gray">Chase Scenarios</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-apple-blue mb-2">100%</div>
+                            <div class="text-apple-gray">Free to Play</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-12 lg:mt-0">
+                    <div class="bg-gradient-to-br from-apple-blue to-apple-blue-dark rounded-2xl p-8 text-white">
+                        <h3 class="text-2xl font-bold mb-4">Game Controls</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <kbd class="bg-white/20 px-3 py-1 rounded mr-3 text-sm">WASD</kbd>
+                                <span>Drive & Steer</span>
+                            </div>
+                            <div class="flex items-center">
+                                <kbd class="bg-white/20 px-3 py-1 rounded mr-3 text-sm">Space</kbd>
+                                <span>Handbrake / Drift</span>
+                            </div>
+                            <div class="flex items-center">
+                                <kbd class="bg-white/20 px-3 py-1 rounded mr-3 text-sm">Shift</kbd>
+                                <span>Nitro Boost</span>
+                            </div>
+                            <div class="flex items-center">
+                                <kbd class="bg-white/20 px-3 py-1 rounded mr-3 text-sm">C</kbd>
+                                <span>Change Camera</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-apple-gray-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-apple-gray-dark mb-4">
+                    Game Features
+                </h2>
+                <p class="text-lg text-apple-gray max-w-2xl mx-auto">
+                    Discover what makes Mr. Drifter the ultimate car chase simulator experience
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-apple-blue rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-apple-gray-dark mb-3">Realistic Physics</h3>
+                    <p class="text-apple-gray">Experience authentic car handling and drift mechanics that make every chase feel real and exciting.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-apple-green rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-apple-gray-dark mb-3">Multiple Environments</h3>
+                    <p class="text-apple-gray">Race through diverse city landscapes, from downtown districts to industrial areas and highways.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-apple-red rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-apple-gray-dark mb-3">Police AI</h3>
+                    <p class="text-apple-gray">Face intelligent police units with advanced pursuit tactics that adapt to your driving style.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M4 3a2 2 0 100 4h12a2 2 0 100-4H4z"/>
+                            <path fill-rule="evenodd" d="M3 8a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-apple-gray-dark mb-3">Car Customization</h3>
+                    <p class="text-apple-gray">Unlock and customize various high-performance vehicles with unique handling characteristics.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-apple-gray-dark mb-3">Power-ups & Boosts</h3>
+                    <p class="text-apple-gray">Collect nitro boosts and special power-ups to enhance your escape capabilities during chases.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-indigo-500 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 9a2 2 0 114 0 2 2 0 01-4 0z"/>
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a4 4 0 00-3.446 6.032l-2.261 2.26a1 1 0 101.414 1.415l2.261-2.261A4 4 0 1011 5z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-apple-gray-dark mb-3">Progressive Difficulty</h3>
+                    <p class="text-apple-gray">Challenge yourself with increasingly difficult chase scenarios and wanted levels.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-apple-gray-dark mb-4">
+                    Pro Tips for Success
+                </h2>
+                <p class="text-lg text-apple-gray max-w-2xl mx-auto">
+                    Master these techniques to become the ultimate street racing legend
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-gradient-to-br from-apple-gray-light to-white p-6 rounded-xl border border-gray-200">
+                    <h3 class="text-xl font-semibold text-apple-gray-dark mb-3">🏎️ Master the Drift</h3>
+                    <p class="text-apple-gray">Use the handbrake while turning to initiate controlled drifts around corners. Practice timing your drift entries and exits for maximum speed retention.</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-apple-gray-light to-white p-6 rounded-xl border border-gray-200">
+                    <h3 class="text-xl font-semibold text-apple-gray-dark mb-3">🚦 Know Your Routes</h3>
+                    <p class="text-apple-gray">Learn the city layout and identify escape routes, shortcuts, and hiding spots. Knowledge of the terrain is crucial for successful evasion.</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-apple-gray-light to-white p-6 rounded-xl border border-gray-200">
+                    <h3 class="text-xl font-semibold text-apple-gray-dark mb-3">⚡ Strategic Nitro Use</h3>
+                    <p class="text-apple-gray">Save your nitro boosts for critical moments - escaping tight situations, reaching top speeds on highways, or making crucial overtakes.</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-apple-gray-light to-white p-6 rounded-xl border border-gray-200">
+                    <h3 class="text-xl font-semibold text-apple-gray-dark mb-3">🎯 Avoid Damage</h3>
+                    <p class="text-apple-gray">Minimize collisions with obstacles and other vehicles. A damaged car performs poorly, making it harder to escape pursuit situations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-apple-gray-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-apple-blue rounded-lg flex items-center justify-center">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M8 16.5a1.5 1.5 0 01-3 0V14h.5c.69 0 1.25-.56 1.25-1.25v-.75c0-.69.56-1.25 1.25-1.25h4c.69 0 1.25.56 1.25 1.25v3.75a1.5 1.5 0 01-3 0V14h-2v2.5z"/>
+                                <path d="M12.5 4h-5C6.67 4 6 4.67 6 5.5S6.67 7 7.5 7h5c.83 0 1.5-.67 1.5-1.5S13.33 4 12.5 4z"/>
+                            </svg>
+                        </div>
+                        <span class="text-xl font-semibold">GameHub</span>
+                    </div>
+                    <p class="text-apple-gray mb-4">
+                        Experience the thrill of Mr. Drifter: Car Chase Simulator and other exciting online games. 
+                        Play for free directly in your browser with no downloads required.
+                    </p>
+                    <p class="text-sm text-apple-gray">
+                        © 2024 GameHub. All rights reserved. Game content provided by third-party developers.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-apple-gray">
+                        <li><a href="#game" class="hover:text-white transition-colors">Play Game</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="#features" class="hover:text-white transition-colors">Features</a></li>
+                        <li><a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Game Info</h4>
+                    <ul class="space-y-2 text-apple-gray">
+                        <li>Genre: Racing/Simulation</li>
+                        <li>Platform: Web Browser</li>
+                        <li>Controls: Keyboard</li>
+                        <li>Status: Free to Play</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-apple-gray text-sm">
+                    Mr. Drifter: Car Chase Simulator - The ultimate online racing experience. 
+                    Master drifting, escape police chases, and become a street racing legend.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smooth Scrolling Script -->
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add loading animation for iframe
+        const iframe = document.querySelector('iframe');
+        if (iframe) {
+            iframe.addEventListener('load', function() {
+                this.style.opacity = '1';
+            });
+        }
+    </script>
+</body>
+</html> 
